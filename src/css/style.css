@@ -1,0 +1,126 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: #4abebd;
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+
+.container {
+    max-width: 625px;
+    display: grid;
+    grid-template-areas: "join join"
+                         "subscription why-us";
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item {
+    padding: 30px;
+}
+
+.join {
+    grid-area: join;
+    background-color: white;
+}
+
+.join .join-title {
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.join .join-subtitle {
+    color: var(--bright-yellow);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.join .join-txt {
+    color: var(--grayish-blue);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.subscription, .why-us {
+    color: #ffffff;
+}
+
+.subscription {
+    grid-area: subscription;
+    background-color: var(--cyan);
+}
+
+.subscription .subscription-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.subscription .subscription-price {
+    color: var(--light-gray);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.subscription span {
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-right: 5px;
+}
+
+.subscription .subscription-info {
+    margin-bottom: 30px;
+}
+
+.subscription a {
+    text-align: center;
+    background-color: var(--bright-yellow);
+    color: #ffffff;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.subscription a:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.why-us {
+    grid-area: why-us;
+    background-color: var(--light-cyan);
+}
+
+.why-us .why-us-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.why-us .why-us-info {
+    color: var(--light-gray);
+    font-weight: 400;
+    line-height: 1.3rem;
+}

@@ -1,0 +1,14 @@
+@media(max-width: 425px){
+    main {
+        padding: 50px;
+    }
+    .container {
+        grid-template-areas: "join"
+                             "subscription"
+                             "why-us";
+
+        grid-template-columns: 100%;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+}
